@@ -8,9 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="libForm">
+        <label for="txtTitle">Title: </label>
+        <input type="text" name="txtTitle" id="txtTitle">
 
+        <label for="txtAuthor">Author: </label>
+        <input type="text" name="txtAuthor" id="txtAuthor">
 
-    
+        <label for="txtPages">Number of Pages: </label>
+        <input type="text" name="txtPages" id="txtPages">
+
+        <label for="chkHasRead">Have You Read? </label>
+        <input type="checkbox" name="chkHasRead" id="chkHasRead">
+        
+        <input type="button" id="addBtn" onclick="addBookToLibrary()" value="Add To Library">
+
+        <input type="button" id="clearBtn" onclick="clearLibrary()" value="Clear Library">
+    </div>
+
+    <div class="library" id ="library">
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
