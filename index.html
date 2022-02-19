@@ -9,21 +9,31 @@
 </head>
 <body>
     <div class="libForm">
-        <label for="txtTitle">Title: </label>
-        <input type="text" name="txtTitle" id="txtTitle">
-
-        <label for="txtAuthor">Author: </label>
-        <input type="text" name="txtAuthor" id="txtAuthor">
-
-        <label for="txtPages">Number of Pages: </label>
-        <input type="text" name="txtPages" id="txtPages">
-
-        <label for="chkHasRead">Have You Read? </label>
-        <input type="checkbox" name="chkHasRead" id="chkHasRead">
+        <div class="title">
+            <label for="txtTitle">Title: </label><br>
+            <input type="text" name="txtTitle" id="txtTitle">
+        </div>
         
-        <input type="button" id="addBtn" onclick="addBookToLibrary()" value="Add To Library">
+        <div class="author">
+            <label for="txtAuthor">Author: </label><br>
+            <input type="text" name="txtAuthor" id="txtAuthor">
+        </div>
+        
+        <div class="pages">
+            <label for="txtPages">Number of Pages: </label><br>
+            <input type="text" name="txtPages" id="txtPages">
+        </div>
 
-        <input type="button" id="clearBtn" onclick="clearLibrary()" value="Clear Library">
+        <div class="hasRead">
+            <label for="chkHasRead">Have You Read? </label><br>
+            <input type="checkbox" name="chkHasRead" id="chkHasRead">
+        </div>
+
+        <div class="controlBox">
+            <input type="button" id="addBtn" onclick="addBookToLibrary()" value="Add To Library">
+
+            <input type="button" id="clearBtn" onclick="clearLibrary()" value="Clear Library">
+        </div>
     </div>
 
     <div class="library" id ="library">
